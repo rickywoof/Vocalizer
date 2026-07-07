@@ -86,4 +86,4 @@ this repo — see `sounds/README.md` for the expected layout.
 
 ## License
 
-[Choose a license — e.g. MIT] — see [LICENSE](LICENSE).
+[LICENSE](LICENSE).
