@@ -33,7 +33,7 @@ stitched into one continuous timeline.
 ## Installation
 
 ```bash
-git clone https://github.com/<you>/vocalizer.git
+git clone https://github.com/rickywoof/vocalizer.git
 cd vocalizer
 pip install -r requirements.txt
 ```
