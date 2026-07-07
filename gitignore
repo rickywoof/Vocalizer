@@ -1,0 +1,26 @@
+# Audio assets and generated output — supply your own, don't commit
+*.wav
+*.mp3
+*.flac
+sounds/*
+!sounds/.gitkeep
+!sounds/README.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Model cache (if VoxCPM downloads locally into the repo)
+models/
+*.ckpt
+*.safetensors
+
+# OS / editor cruft
+.DS_Store
+.idea/
+.vscode/
