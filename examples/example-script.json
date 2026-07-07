@@ -1,0 +1,48 @@
+{
+  "generation": {
+    "cfg_value": 2.0,
+    "inference_timesteps": 10,
+    "normalize": true
+  },
+
+  "background": {
+    "file": "background.wav",
+    "volume": 5,
+    "presence": "on",
+    "fade_ms": 250
+  },
+
+  "segments": [
+    { "ref": "emotion.wav", "text": "I've been working on this all afternoon.", "volume": 5 },
+
+    { "duration_ms": 400 },
+
+    {
+      "voice_prompt": "an older man, gravelly voice, speaking slowly",
+      "text": "Now let me show you something you haven't seen before.",
+      "volume": 6
+    },
+
+    {
+      "ref": "emotion.wav",
+      "voice_prompt": "hushed, a little conspiratorial",
+      "text": "Come a little closer, I'll tell you a secret.",
+      "volume": 4,
+      "inference_timesteps": 20
+    },
+
+    { "volume": 8, "fade_ms": 300 },
+    { "ref": "emotion.wav", "text": "Whoa, it's getting loud in here!", "volume": 7 },
+
+    { "file": "rain.wav", "volume": 5, "fade_ms": 600 },
+    { "duration_ms": [300, 900] },
+    { "ref": "emotion.wav", "text": "Sounds like a storm's rolling in.", "volume": 5 },
+
+    { "presence": "off", "fade_ms": 500 },
+
+    { "ref": "sound-{n}.wav", "randomize": true, "repeat": 3, "volume_jitter": [3, 7] },
+
+    { "duration_ms": 250 },
+    { "ref": "emotion.wav", "text": "Anyway. Good talk." }
+  ]
+}
